@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.form-register {
+    width: 400px;
+    background-color: #e6e7e4;
+    padding: 30px;
+    border-radius: 13px;
+    font-family: 'calibri light';
+    color: black;
+    box-shadow: 16px 17px 7px 1px rgba(92, 156, 49, 0.75);
+    -webkit-box-shadow: 16px 17px 7px 1px rgba(92, 156, 49, 0.75);
+    -moz-box-shadow: 16px 17px 7px 1px rgba(92, 156, 49, 0.75);
+    z-index: 1;
+
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.controls {
+    width: 100%;
+    background: #ffffff;
+    margin: 10px 0 10px 10px;
+    padding: 8px 0px 8px 6px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    font-family: 'calibri light';
+    font-size: 18px;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a:hover {
+    color: #10411cff;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #5a9b31;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.form-register a {
+    color: #5a9b31;
+}
+
+.form-register .botons:hover {
+    background-color: #10411cff;
+}
+
+.contenido {
+    display: grid;
+    height: 100vh;
+    position: relative;
+    grid-template-columns: 1fr 2fr;
+}
+
+.derecha {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.izquierda {
+    background-color: #5a9b31;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.centro {
+    position: absolute;
+    margin-left: 100%;
+}
+
+
+.logo1 {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    /* Espacio alrededor del contenido */
+    border-radius: 5px;
+    /* Opcional, para redondear los bordes */
+    flex-direction: column;
+}
+
+.logo1 i {
+    margin-right: 10px;
+    /* Espacio entre el ícono y el input */
+    font-size: 1.5em;
+    /* Ajusta el tamaño del ícono */
+    color: #5a9b31;
+    /* Color del ícono */
+}
+
+.logo1 input {
+    border: none;
+    /* Quitar el borde del input */
+    outline: none;
+    /* Quitar el borde azul al hacer clic */
+    flex-grow: 1;
+    /* Hace que el input crezca para llenar el espacio */
+}
+
+.options select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'calibri light';
+    color: grey;
+
+}
+
+.derecha img {
+    max-width: 500px;
+    margin-left: 25%;
+}
+
+.derecha h2 {
+    width: 100%;
+    font-size: 40px;
+    /* Tamaño del título */
+    color: #2a5d23;
+    /* Un color que combine con el diseño */
+    text-align: center;
+    margin-bottom: 20px;
+    /* Espacio entre el título y el logo */
+    font-family: "Calibri light";
+    margin-left: 30%;
+
+}
+
+.center_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+
+}

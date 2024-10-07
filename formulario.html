@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/jpg" href="https://cdnfuadesarrollo.blob.core.windows.net/estilosfua/Favicono.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylo.css">
+    <title>Generador de sello</title>
+    <style>
+        .error {
+            color: #a10e0e;
+            display: none;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenido">
+        <div class="izquierda">
+            <div class="centro">
+                <section class="form-register">
+                    <h4></h4>
+                    <div class="logo1">
+                        <div class="center_item">
+                            <i class="bi bi-archive"></i>
+                            <input class="controls" type="text" name="proyecto" id="proyecto"
+                                placeholder="Ingrese nombre del proyecto"
+                                oninput="this.value = this.value.toUpperCase()">
+                        </div>
+                        <span id="proyecto-error" class="error">¡Este campo es obligatorio!</span>
+                    </div>
+                    <div class="logo1">
+                        <div class="center_item">
+                            <i class="bi bi-bar-chart-line"></i>
+                            <input class="controls" type="text" name="Centro de costo" id="Centro_costo"
+                                placeholder="Ingrese el centro de costo" minlength="10" maxlength="10" required
+                                onblur="validarCentroCosto()">
+                        </div>
+                        <span id="error-message" class="error">¡El centro de costo debe tener exactamente 10
+                            caracteres!</span>
+                    </div>
+                    <div class="logo1">
+                        <div class="center_item">
+                            <i class="bi bi-buildings"></i>
+                            <input class="controls" type="text" name="Rubro" id="Rubro" placeholder="Ingrese rubro"
+                                oninput="this.value = this.value.toUpperCase()">
+                        </div>
+                        <span id="rubro-error" class="error">¡Este campo es obligatorio!</span>
+                    </div>
+                    <div class="logo1">
+                        <div class="center_item">
+                            <i class="bi bi-coin"></i>
+                            <input class="controls" type="text" name="cuenta" id="cuenta"
+                                placeholder="Ingrese número de cuenta">
+                        </div>
+                        <span id="cuenta-error" class="error">¡Este campo es obligatorio!</span>
+                    </div>
+                    <div class="options logo1">
+                        <div class="center_item">
+                            <i class="bi bi-person-circle"></i>
+                            <select class="controls" name="Autorizado" id="Autorizado">
+                                <option value="" disabled selected>Seleccione quién autoriza</option>
+                                <option value="Erika">ERIKA</option>
+                                <option value="Durley">DURLEY</option>
+                                <option value="Beatriz">BEATRIZ</option>
+                            </select>
+                        </div>
+                        <span id="autorizado-error" class="error">¡Debe seleccionar quién autoriza!</span>
+                    </div>
+                    <div class="Correcto">
+                        <input class="botons controls" type="button" value="Generar" onclick="validarFormulario()">
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="derecha">
+            <div class="derecha-img">
+                <h2>Generador de sellos</h2>
+                <img src="https://cdnfuadesarrollo.blob.core.windows.net/estilosfua/Logo-Color.png"
+                    alt="logo fundacion">
+            </div>
+        </div>
+    </div>
+
+    <script src="validacion.js"></script>
+</body>
+
+</html>
